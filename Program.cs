@@ -4,7 +4,7 @@ Console.WriteLine(teste);
 
 Console.WriteLine("\n ------------------------------- \n");
 
-lineChanger("TESTE", address, 2);
+lineChanger("NEW*", address, 2);
 
 var testeUpdate = File.ReadAllText(address);
 Console.WriteLine(testeUpdate);
@@ -12,6 +12,6 @@ Console.WriteLine(testeUpdate);
 void lineChanger(string newText, string fileName, int line_to_edit)
 {
     string[] arrLine = File.ReadAllLines(fileName);
-    arrLine[line_to_edit - 1] = newText;
+    arrLine[line_to_edit - 1] = arrLine[line_to_edit - 1] + newText;
     File.WriteAllLines(fileName, arrLine);
 }
