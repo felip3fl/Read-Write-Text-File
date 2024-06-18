@@ -5,7 +5,9 @@ Console.WriteLine(teste);
 Console.WriteLine("\n ------------------------------- \n");
 
 lineChanger("TESTE", address, 2);
-Console.WriteLine(teste);
+
+var testeUpdate = File.ReadAllText(address);
+Console.WriteLine(testeUpdate);
 
 void lineChanger(string newText, string fileName, int line_to_edit)
 {
