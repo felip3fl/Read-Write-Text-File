@@ -12,6 +12,6 @@ Console.WriteLine(testeUpdate);
 void lineChanger(string newText, string fileName, int line_to_edit)
 {
     string[] arrLine = File.ReadAllLines(fileName);
-    arrLine[line_to_edit - 1] = arrLine[line_to_edit - 1] + newText;
+    arrLine[line_to_edit ] = arrLine[line_to_edit ] + newText;
     File.WriteAllLines(fileName, arrLine);
 }
